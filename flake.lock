@@ -37,11 +37,11 @@
     "quicksnip-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1777838257,
-        "narHash": "sha256-h7IhA4t70+3vr+JXOjSklCSlavZz0vcY73lWFc5xBBw=",
+        "lastModified": 1779287503,
+        "narHash": "sha256-I5P5+by5R3IUNhcero7OhbwfvESEMLgc4GCrE0GCR3w=",
         "owner": "Ronin-CK",
         "repo": "QuickSnip",
-        "rev": "17b754a3f4d9fba4774bdaecf581ca281c9ea207",
+        "rev": "3e1a3130ff36bf2f009dabedbe3d3edb1da7b62e",
         "type": "github"
       },
       "original": {
