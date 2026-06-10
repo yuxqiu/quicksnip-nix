@@ -64,7 +64,7 @@
                   pkgs.wtype
                 ]
               }" \
-              --prefix QML2_IMPORT_PATH : "${pkgs.qt6.qt5compat}/lib/qt-6/qml:${pkgs.libsForQt5.qt5.qtgraphicaleffects}/lib/qt-5/qml" \
+              --prefix QML2_IMPORT_PATH : "${pkgs.qt6.qt5compat}/lib/qt-6/qml:${pkgs.qt5.qtgraphicaleffects}/lib/qt-5/qml" \
               --set QT_QPA_PLATFORM wayland
 
             runHook postInstall
@@ -115,7 +115,7 @@
             # Ensure QuickSnip's required imports are present
             export QML2_IMPORT_PATH="${
               pkgs.lib.makeSearchPath "lib/qt-6/qml" [ pkgs.qt6.qt5compat ]
-            }:${pkgs.libsForQt5.qt5.qtgraphicaleffects}/lib/qt-5/qml''${QML2_IMPORT_PATH:+:}$QML2_IMPORT_PATH"
+            }:${pkgs.qt5.qtgraphicaleffects}/lib/qt-5/qml''${QML2_IMPORT_PATH:+:}$QML2_IMPORT_PATH"
 
             echo "✅ QuickSnip dev shell ready"
             echo "   Try: quickshell -p ${./.} -n"
